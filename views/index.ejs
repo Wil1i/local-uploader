@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Local Uploader - Wil1i</title>
+  </head>
+  <body dir="rtl">
+    <ul class="files">
+      <% files.forEach(file => { %> <%- include("templates/singleFile.ejs",
+      {description : file.description, name : file.name, id : file.id}) %> <% })
+      %>
+    </ul>
+
+    <%- include("templates/uploadBtn.ejs") %>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+:root {
+  --light-dark: #ccc;
+  --green: green;
+  --main: purple;
+}
+
+body {
+  background-color: var(--light-dark);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  outline: none;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 7px;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary {
+  background-color: var(--main);
+  color: white;
+  border: 1px solid var(--main);
+}
+
+.danger {
+  background-color: transparent;
+  color: var(--main);
+  border: 1px solid var(--main);
+}
+
+.primary:hover {
+  color: var(--main);
+  background-color: transparent;
+}
+
+.danger:hover {
+  background-color: var(--main);
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
