@@ -12,12 +12,13 @@
   <body dir="rtl">
     <ul class="files">
       <% files.forEach(file => { %> <%- include("templates/singleFile.ejs",
-      {description : file.description, name : file.name, id : file.id}) %> <% })
+      {description : file.description, name : file.name, id : file.id, displayName : file.displayName}) %> <% })
       %>
     </ul>
 
     <%- include("templates/uploadBtn.ejs") %>
 
     <script src="/js/index.js"></script>
+    <script src="/js/axios.min.js"></script>
   </body>
 </html>

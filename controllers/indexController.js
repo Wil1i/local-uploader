@@ -10,6 +10,7 @@ const post = async (req, res) => {
   if (req.file && req.file.filename)
     await File.create({
       name: req.file.filename,
+      displayName : req.file.filename
     });
 
   res.redirect("/");

@@ -17,6 +17,10 @@ const File = db.define(
     name: {
       type: DataTypes.STRING,
     },
+
+    displayName : {
+      type : DataTypes.STRING
+    }
   },
   {
     timestamps: false,
