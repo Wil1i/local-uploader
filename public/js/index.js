@@ -9,6 +9,6 @@ uploadBtn.addEventListener("click", () => {
 });
 
 submitBtn.addEventListener("click", () => {
-  submitBtn.disabled = true;
-  submitBtn.innerHTML = "در حال آپلود...";
+  uploadBtn.style.display = "flex";
+  submitBtn.style.display = "none";
 });
